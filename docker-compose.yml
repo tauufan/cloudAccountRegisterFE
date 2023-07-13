@@ -1,0 +1,21 @@
+version: '3.8'
+services:
+  appfe:
+    container_name: Serve
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: 'php artisan serve --host=0.0.0.0'
+    volumes:
+      - .:/app
+    ports:
+      - 8000:8000
+    # env_file: .env
+    environment:
+      - IPBE=192.75.75.26
+      # - PORTBE=8080
+      # - "URLBE=/account"
+      # - "USERBE=admin"
+      # - "PASSWORDBE=administrator"
+  
+  

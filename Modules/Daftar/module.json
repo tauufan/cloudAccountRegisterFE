@@ -1,0 +1,13 @@
+{
+    "name": "Daftar",
+    "alias": "daftar",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\Daftar\\Providers\\DaftarServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}
